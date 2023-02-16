@@ -21,8 +21,16 @@ namespace HelloWorld
         {
             Console.WriteLine("6.Feladat: Keresés");
             Console.Write("Kérem adjon meg egy magasságot: ");
-            int KeresMqag = int.Parse(Console.ReadLine());
-
+            int KeresMag = int.Parse(Console.ReadLine());
+            bool Igaze = false;
+            for (int i = 0; i < MoHegyei_List.Count; i++)
+            {
+                if (KeresMag < MoHegyei_List[i].Magassag && MoHegyei_List[i].Hegyseg == "Börzsöny")
+                {
+                    Igaze = true;
+                    break;
+                }
+            }
         }
 
         private static void Feladat5LegMag()
