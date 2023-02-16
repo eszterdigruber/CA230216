@@ -8,6 +8,8 @@ namespace CA230216
 {
     internal class MoHegyei
     {
-
+        public string HegycsucsNeve;
+        public string Hegyseg;
+        public int Magassag;
     }
 }
