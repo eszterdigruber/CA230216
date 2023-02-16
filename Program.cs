@@ -28,6 +28,10 @@ namespace HelloWorld
                 MoHegyei_List.Add(new MoHegyei(nev, hegyseg, magassag));
             }
             sr.Close();
+            if (db > 0)
+            { Console.WriteLine($"Sikeres beolvasás \nBeolvasott hegyek száma: {db}"); }
+            else
+            { Console.WriteLine("Sajnos nem sikerült a beolvasás"); }
         }
     }
 }
