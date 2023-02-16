@@ -11,8 +11,27 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             //Magyarország hegyei, soronkénti beolvasás
-            Feladat2Beolvasas();
-            Feladat4AtlagMag();
+            Feladat2Beolvasas(); Console.WriteLine("\n---------\n");
+            Feladat4AtlagMag(); Console.WriteLine("\n---------\n");
+            Feladat5LegMag(); Console.WriteLine("\n---------\n");
+        }
+
+        private static void Feladat5LegMag()
+        {
+            Console.WriteLine("5.Feladat: Legmagasabb hegy");
+            int MaxMag = int.MinValue;
+            string MaxHegyNev = "cica";
+            string MaxHegyseg = "kutyus";
+            foreach (var m in MoHegyei_List)
+            {
+                if (MaxMag < m.Magassag) 
+                { 
+                    MaxMag = m.Magassag;
+                    MaxHegyNev = m.HegycsucsNeve;
+                    MaxHegyseg = m.Hegyseg;
+                }
+            }
+            Console.WriteLine($"\n\tLegmagasabb hegy: {MaxHegyNev} \n\tMagassága: {MaxMag} \n\tHegysége: {MaxHegyseg}");
         }
 
         private static void Feladat4AtlagMag()
