@@ -30,6 +30,10 @@ namespace HelloWorld
                     Igaze = true;
                     break;
                 }
+                if (Igaze == true)
+                { Console.WriteLine("Van magasabb hegy a Börzsönyben"); }
+                else
+                { Console.WriteLine("Nincs magasabb hegy a Börzsönyben"); }
             }
         }
 
