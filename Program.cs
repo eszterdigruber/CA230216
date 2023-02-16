@@ -15,6 +15,22 @@ namespace HelloWorld
             Feladat4AtlagMag(); Console.WriteLine("\n---------\n");
             Feladat5LegMag(); Console.WriteLine("\n---------\n");
             Feladat6Kereses(); Console.WriteLine("\n---------\n");
+            Feladat73000(); Console.WriteLine("\n---------\n");
+        }
+
+        private static void Feladat73000()
+        {
+            Console.WriteLine("7.Feladat: 3000 lábnál magasabb hegyek száma");
+            int db3000lab = 0;
+            foreach (var m in MoHegyei_List)
+            {
+                double HMagLab = m.Magassag * 3.280839895;
+                if (3000 < HMagLab)
+                {
+                    db3000lab++;
+                }
+            }
+            Console.WriteLine($"Ennyi esetben volt 3000láb felett a hegyek magassága: {db3000lab}");
         }
 
         private static void Feladat6Kereses()
