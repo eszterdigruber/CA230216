@@ -21,8 +21,13 @@ namespace HelloWorld
             int db = 0;
             while (!sr.EndOfStream)
             {
+                var nev = sr.ReadLine();
+                var hegyseg = sr.ReadLine();
+                var magassag = sr.ReadLine();
                 db++;
+                MoHegyei_List.Add(new MoHegyei(nev, hegyseg, magassag));
             }
+            sr.Close();
         }
     }
 }
