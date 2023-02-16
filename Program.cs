@@ -12,6 +12,18 @@ namespace HelloWorld
         {
             //Magyarország hegyei, soronkénti beolvasás
             Feladat2Beolvasas();
+            Feladat4AtlagMag();
+        }
+
+        private static void Feladat4AtlagMag()
+        {
+            Console.WriteLine("4.Felaat: átlag, magasság");
+            int OsszMag = 0;
+            foreach (var m in MoHegyei_List)
+            {
+                OsszMag += m.Magassag;
+            }
+            double AtlagMag = (double)OsszMag / MoHegyei_List.Count;
         }
 
         private static void Feladat2Beolvasas()
