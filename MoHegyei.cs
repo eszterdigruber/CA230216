@@ -11,5 +11,12 @@ namespace CA230216
         public string HegycsucsNeve;
         public string Hegyseg;
         public int Magassag;
+
+        public MoHegyei(string nev, string hegyseg, string magassag)
+        {
+            HegycsucsNeve = nev;
+            Hegyseg = hegyseg;
+            Magassag = int.Parse(magassag);
+        }
     }
 }
