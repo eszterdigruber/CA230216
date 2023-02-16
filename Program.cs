@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using System.IO;
+
 namespace HelloWorld
 {
     class Program
@@ -10,6 +11,13 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             //Magyarország hegyei, soronkénti beolvasás
+            Feladat2Beolvasas();
+        }
+
+        private static void Feladat2Beolvasas()
+        {
+            Console.WriteLine("2.Feladat:");
+            var sr = new StreamReader(@"hegyekMoSorok.txt");
         }
     }
 }
