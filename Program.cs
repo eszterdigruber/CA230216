@@ -16,6 +16,19 @@ namespace HelloWorld
             Feladat5LegMag(); Console.WriteLine("\n---------\n");
             Feladat6Kereses(); Console.WriteLine("\n---------\n");
             Feladat73000(); Console.WriteLine("\n---------\n");
+            Feladat8Statisztika(); Console.WriteLine("\n---------\n");
+        }
+
+        private static void Feladat8Statisztika()
+        {
+            Console.WriteLine("8.Feladat: Hegység statisztika");
+            List<string> Hegysegek = new List<string>();
+            foreach (var m in MoHegyei_List)
+            {
+                if (!Hegysegek.Contains(m.Hegyseg))
+                { Hegysegek.Add(m.Hegyseg); }
+            }
+
         }
 
         private static void Feladat73000()
