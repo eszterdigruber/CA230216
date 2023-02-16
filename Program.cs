@@ -16,7 +16,7 @@ namespace HelloWorld
 
         private static void Feladat2Beolvasas()
         {
-            Console.WriteLine("2.Feladat:");
+            Console.WriteLine("2.Feladat: beolvasás");
             var sr = new StreamReader(@"hegyekMoSorok.txt", Encoding.UTF8);
             int db = 0;
             while (!sr.EndOfStream)
