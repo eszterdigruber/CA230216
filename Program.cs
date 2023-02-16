@@ -14,6 +14,15 @@ namespace HelloWorld
             Feladat2Beolvasas(); Console.WriteLine("\n---------\n");
             Feladat4AtlagMag(); Console.WriteLine("\n---------\n");
             Feladat5LegMag(); Console.WriteLine("\n---------\n");
+            Feladat6Kereses(); Console.WriteLine("\n---------\n");
+        }
+
+        private static void Feladat6Kereses()
+        {
+            Console.WriteLine("6.Feladat: Keresés");
+            Console.Write("Kérem adjon meg egy magasságot: ");
+            int KeresMqag = int.Parse(Console.ReadLine());
+
         }
 
         private static void Feladat5LegMag()
@@ -36,7 +45,7 @@ namespace HelloWorld
 
         private static void Feladat4AtlagMag()
         {
-            Console.WriteLine("4.Felaat: átlag, magasság");
+            Console.WriteLine("4.Feladat: Átlag, Magasság");
             int OsszMag = 0;
             foreach (var m in MoHegyei_List)
             {
@@ -48,7 +57,7 @@ namespace HelloWorld
 
         private static void Feladat2Beolvasas()
         {
-            Console.WriteLine("2.Feladat: beolvasás");
+            Console.WriteLine("2.Feladat: Beolvasás");
             var sr = new StreamReader(@"hegyekMoSorok.txt", Encoding.UTF8);
             int db = 0;
             while (!sr.EndOfStream)
