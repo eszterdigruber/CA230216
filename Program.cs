@@ -28,7 +28,16 @@ namespace HelloWorld
                 if (!Hegysegek.Contains(m.Hegyseg))
                 { Hegysegek.Add(m.Hegyseg); }
             }
-
+            foreach (var h in Hegysegek)
+            {
+                int db = 0;
+                foreach (var m in MoHegyei_List)
+                {
+                    if (h == m.Hegyseg)
+                    { db++; }
+                }
+                Console.WriteLine($"{h} : {db}");
+            }
         }
 
         private static void Feladat73000()
