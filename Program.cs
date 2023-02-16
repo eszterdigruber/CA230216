@@ -24,6 +24,7 @@ namespace HelloWorld
                 OsszMag += m.Magassag;
             }
             double AtlagMag = (double)OsszMag / MoHegyei_List.Count;
+            Console.WriteLine($"Hazánk hegyeinek átlag magassága: {AtlagMag:0.00} m");
         }
 
         private static void Feladat2Beolvasas()
